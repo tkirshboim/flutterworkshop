@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/screens/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,9 +13,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Food Delivery',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primaryColor: Colors.deepOrange,
+        scaffoldBackgroundColor: Colors.grey[50]
       ),
-      home: MyHomePage(title: 'Flutter Food delivery workshop'),
+      home: HomeScreen(),
     );
   }
 }
